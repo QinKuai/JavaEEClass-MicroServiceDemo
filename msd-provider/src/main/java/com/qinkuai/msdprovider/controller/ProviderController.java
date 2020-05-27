@@ -11,4 +11,9 @@ public class ProviderController {
 	public String getProvider() {
 		return new Provider().toString();
 	}
+	
+	@RequestMapping(value = "api/v1/demo/get")
+	public String getHello() {
+		return "Hello MicroService!";
+	}
 }

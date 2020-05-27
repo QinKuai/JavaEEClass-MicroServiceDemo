@@ -15,4 +15,9 @@ public class ConsumerController {
 	public String getConsumer() {
 		return providerService.getProvider();
 	}
+	
+	@RequestMapping(value = "Hello")
+	public String getHello() {
+		return providerService.getHello();
+	}
 }

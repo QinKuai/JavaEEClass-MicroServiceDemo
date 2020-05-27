@@ -9,4 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public interface ProviderService {
 	@RequestMapping(value = "getProvider")
 	String getProvider();
+	
+	@RequestMapping(value = "api/v1/demo/get")
+	String getHello();
 }
