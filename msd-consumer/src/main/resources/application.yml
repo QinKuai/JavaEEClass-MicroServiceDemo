@@ -1,0 +1,6 @@
+server:
+  servlet:
+    context-path: /consumer
+  port: 7001
+spring:  application:    name: consumer-server
+eureka:  client:    service-url:      defaultZone: http://localhost:5060/eureka/eureka      

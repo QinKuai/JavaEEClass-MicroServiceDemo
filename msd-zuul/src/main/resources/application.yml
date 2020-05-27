@@ -1,0 +1,13 @@
+server:
+  port: 9501
+eureka:  client:    service-url:      defaultZone: http://localhost:5060/eureka/eureka
+  instance:    lease-renewal-interval-in-seconds: 2
+    lease-expiration-duration-in-seconds: 5
+    instance-id: gateway-9501.com
+    #prefer-ip-address: true
+
+zuul:
+  ignored-services:  - "*"  routes:
+    consumer-server: /c/**        
+
+spring:  application:    name: gateway-zuul          
