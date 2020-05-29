@@ -67,5 +67,6 @@
 		<module>msd-provider</module>
 		<module>msd-consumer</module>
 		<module>msd-zuul</module>
+		<module>msd-config</module>
 	</modules>
 </project>
